@@ -4,7 +4,7 @@ const { getThoughts, getThoughtById, createThought, updateThought, deleteThought
 const { getReactions, getReactionById, createReaction, deleteReaction} = require('../../controllers/reactionController');
 
 //GET and POST routes
-router.route('/thoughts').get(getThoughts).post(createThought);
+router.route('/').get(getThoughts).post(createThought);
 
 //GET user by ID
 router.route('/:thoughtId').get(getThoughtById);
@@ -16,7 +16,7 @@ router.route('/:userId/updateThought').put(updateThought);
 router.route('/:thoughtId/deleteThought').get(deleteThought);
 
 //Add reaction
-router.route('/:reactionId').get(createReaction);
+router.route('/:thoughtId/reactions/').post(createReaction);
 
 //Delete Reaction
 router.route('/:thoughtId/reactions/:reactionId').get(deleteReaction);

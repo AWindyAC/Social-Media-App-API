@@ -3,21 +3,21 @@ const router = express.Router();
 const { getUsers, getUserById, createUser, deleteUserById, updateUserById, getUserFriends} = require('../../controllers/userController');
 
 //GET
-router.route('/users').get(getUsers)
+router.route('/').get(getUsers)
 
 //POST route
-router.route('/users/newUser').post(createUser);
+router.route('/newUser').post(createUser);
 
-//GET user by ID
-router.route('/:userId').get(getUserById);
+//GET , PUT, DELETE user by ID
+router.route('/:userId').get(getUserById).put(updateUserById).get(deleteUserById);
 
 //PUT
-router.route('/updateUser/:userId').put(updateUserById);
+//router.route('/updateUser/:userId');
 
 //DELETE
-router.route('/deleteUser/:userId').get(deleteUserById);
+//router.route('/deleteUser/:userId');
 
 //GET friends
-router.route('/user/:userId/friends').get(getUserFriends);
+router.route('/:userId/friends').get(getUserFriends);
 
 module.exports = router;

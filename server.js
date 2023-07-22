@@ -3,7 +3,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose'); //importing mongoose
-const routes = require('./routes/api/index.js');
+const routes = require('./routes');
 
 const app = express();
 const PORT = 3000;

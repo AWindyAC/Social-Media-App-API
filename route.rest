@@ -1,22 +1,22 @@
-GET http://localhost:3000/users
+GET http://localhost:3000/api/users
 
 ###
-GET http://localhost:3000/64aab36ee9b5e2c4c8d46c09
+GET http://localhost:3000/api/users/64aab4f80c19334d28431145
 
 ###
-POST http://localhost:3000/
+POST http://localhost:3000/api/users/newUser
 Content-Type: application/json
 
 {
-    "name": "Mack Johnson",
-    "email": "296ham@yahoo.com"
+    "name": "Dwayne Johnson",
+    "email": "256ham@yahoo.com"
 }
 
 ###
-DELETE http://localhost:3000/deleteUser/64aaca6106f398a299740319
+DELETE http://localhost:3000/api/users/64aab4f80c19334d28431145
 
 ###
-PUT http://localhost:3000/updateUser/64aac10f4fda01d9077b1358
+PUT http://localhost:3000/api/updateUser/64aac10f4fda01d9077b1358
 Content-Type:application/json
 
 {
@@ -24,13 +24,13 @@ Content-Type:application/json
 }
 
 ###
-PUT http://localhost:3000/users/new-thought
+PUT http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-    "thought":"This is a new thought!",
-    "username": "Huey Freeman"
+    "thought":"Lets roll out!",
+    "username": "Bumblebee"
 }
 
 ###
-GET http://localhost:3000/users/thoughts
+GET http://localhost:3000/api/users/thoughts

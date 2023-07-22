@@ -6,6 +6,7 @@ module.exports = {
             const users = await User.find();
             res.json(users);
         } catch (err) {
+            console.log(err);
             res.status(500).json(err);
         }
     },
@@ -41,7 +42,7 @@ module.exports = {
                 return res.status(404).json({ message: `Could not find a user` });
             }
             else {
-                return res.sendStatus(204); // No content response
+                return res.sendStatus(204);
             }
         } catch (err) {
             console.log(`Failed to remove ${req.params.userId}:`, err);
