@@ -1,36 +1,36 @@
 GET http://localhost:3000/api/users
 
 ###
-GET http://localhost:3000/api/users/64aab4f80c19334d28431145
+GET http://localhost:3000/api/users/64acb6eb628455426292e54c
 
 ###
 POST http://localhost:3000/api/users/newUser
 Content-Type: application/json
 
 {
-    "name": "Dwayne Johnson",
-    "email": "256ham@yahoo.com"
+    "name": "Wendell Fowlkes",
+    "email": "321turkey@yahoo.com"
 }
 
 ###
-DELETE http://localhost:3000/api/users/64aab4f80c19334d28431145
+DELETE http://localhost:3000/api/users/64ed01b78bdbfd265ae4b26c
 
 ###
-PUT http://localhost:3000/api/updateUser/64aac10f4fda01d9077b1358
+PUT http://localhost:3000/api/users/64bc0ee773c778dc4dbc0a01
 Content-Type:application/json
 
 {
-    "name": "New Name"
+    "name": "The Rock"
 }
 
 ###
-PUT http://localhost:3000/api/users
+POST http://localhost:3000/api/users/
 Content-Type: application/json
 
 {
-    "thought":"Lets roll out!",
-    "username": "Bumblebee"
+    "id":"64aab36ee9b5e2c4c8d46c09",
+    "thought": "I know nothing."
 }
 
 ###
-GET http://localhost:3000/api/users/thoughts
+GET http://localhost:3000/api/users/64acb6eb628455426292e54c/thoughts

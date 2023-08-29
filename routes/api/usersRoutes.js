@@ -9,7 +9,7 @@ router.route('/').get(getUsers)
 router.route('/newUser').post(createUser);
 
 //GET , PUT, DELETE user by ID
-router.route('/:userId').get(getUserById).put(updateUserById).get(deleteUserById);
+router.route('/:userId').get(getUserById).put(updateUserById).delete(deleteUserById);
 
 //PUT
 //router.route('/updateUser/:userId');
