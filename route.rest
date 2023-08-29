@@ -8,29 +8,33 @@ POST http://localhost:3000/api/users/newUser
 Content-Type: application/json
 
 {
-    "name": "Wendell Fowlkes",
-    "email": "321turkey@yahoo.com"
+    "name": "John Snow",
+    "email": "181windterfell@got.com"
 }
 
 ###
 DELETE http://localhost:3000/api/users/64ed01b78bdbfd265ae4b26c
 
 ###
-PUT http://localhost:3000/api/users/64bc0ee773c778dc4dbc0a01
+PUT http://localhost:3000/api/users/64ee415dfb003186b3bf368e
 Content-Type:application/json
 
 {
-    "name": "The Rock"
+    "name": "Arya Stark"
 }
 
 ###
-POST http://localhost:3000/api/users/
+POST http://localhost:3000/api/thought/64aab36ee9b5e2c4c8d46c09/thoughts
 Content-Type: application/json
 
 {
-    "id":"64aab36ee9b5e2c4c8d46c09",
-    "thought": "I know nothing."
+    "text": "I can do this all day.",
+    "username": "Steve Rogers",
+    "userId":"64ee3f41f3c8d6d5671683a7"
 }
 
 ###
-GET http://localhost:3000/api/users/64acb6eb628455426292e54c/thoughts
+GET http://localhost:3000/api/thought/64ee415dfb003186b3bf368e/thoughts
+
+###
+DELETE http://localhost:3000/api/thought/64acb6eb628455426292e54d
