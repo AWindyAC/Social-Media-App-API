@@ -17,7 +17,10 @@ const userSchema = new Schema(
         unique: true, // to ensure that each account has a unique e-mail address
         match: /^\S+@\S+\.\S+$/  // regular expression for validating
     },
-    thoughts: [ thoughtSchema.schema ], 
+    thoughts: [{
+        type: Schema.Types.ObjectId,
+        ref:'User'
+    }], 
     friends: [{
         type: Schema.Types.ObjectId,
         ref:'User'
