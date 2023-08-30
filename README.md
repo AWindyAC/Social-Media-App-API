@@ -8,3 +8,7 @@ This is an example of how to build a simple RESTful API for creating and managin
 Open VS Code and Insomnia. Use npm start in VS Code to start the server and connect to the Mongo Datatbase.
 
 Then use Insomnia to run the various routes (GET, POST, PUT, and DELETE).
+
+# Walkthrough Video
+
+https://drive.google.com/file/d/1ZxYtMQxyv4Bh8sqN5rGFUNPxw5WR9e4-/view
